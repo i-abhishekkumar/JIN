@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload PDF</title>
+  </head>
+  <body>
+    <h1>Upload a PDF file</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".pdf" />
+      <input type="submit" value="Upload" />
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload PDF</title>
+  </head>
+  <body>
+    <h1>Upload a PDF file</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <label for="court_name">Court Name:</label>
+      <input
+        type="text"
+        id="court_name"
+        name="court_name"
+        required
+      /><br /><br />
+      <label for="case_id">Case ID:</label>
+      <input type="text" id="case_id" name="case_id" required /><br /><br />
+      <label for="case_year">Case Year:</label>
+      <input
+        type="number"
+        id="case_year"
+        name="case_year"
+        required
+      /><br /><br />
+      <label for="judges_names">Judges Names:</label>
+      <input
+        type="text"
+        id="judges_names"
+        name="judges_names"
+        required
+      /><br /><br />
+      <label for="appellants">Appellants:</label>
+      <input
+        type="text"
+        id="appellants"
+        name="appellants"
+        required
+      /><br /><br />
+      <label for="respondents">Respondents:</label>
+      <input
+        type="text"
+        id="respondents"
+        name="respondents"
+        required
+      /><br /><br />
+
+      <label for="file">Choose a PDF file:</label>
+      <input
+        type="file"
+        id="file"
+        name="file"
+        accept=".pdf"
+        required
+      /><br /><br />
+      <input type="submit" value="Upload" />
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <h2>Enter Query</h2>
+    <form id="queryForm" method="POST" action="/process_query">
+      <label for="query">Query:</label>
+      <input type="text" id="query" name="query" required />
+
+      <input type="submit" value="Submit Query" />
+    </form>
+  </body>
+</html>

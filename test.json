@@ -1,0 +1,540 @@
+data = {
+  "a": {
+      "aa": {},
+      "ab": {
+          "absolute": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "absence": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "absolutely": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "abhi": {
+              "priority": 1,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "abhi ": {
+              "priority": 1,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          }
+      },
+      "ac": {
+          "Act": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "Acres": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "acquire": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "action": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "accompany": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "acquisition": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "accordance": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "acceptance": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          }
+      },
+      "ad": {
+          "add": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "adjudicate": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "adjudication": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "admit": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "additionally": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "adjudicatory": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          }
+      },
+      "ae": {},
+      "af": {
+          "aforesaid": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "affect": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          },
+          "affair": {
+              "priority": 2,
+              "file_path": [
+                  "uploads/1pdf_file.pdf"
+              ],
+              "sections": [
+                  "section 11",
+                  "section 7",
+                  "section 31",
+                  "section 34",
+                  "section 8",
+                  "section 5",
+                  "section 16"
+              ],
+              "acts": [
+                  "relief ",
+                  "11 ",
+                  "contract \n ",
+                  "arbitration \n ",
+                  "principal ",
+                  "11 \n ",
+                  "arbitration "
+              ]
+          }
+      }}}

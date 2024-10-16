@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>file managaer page - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin-top: -78vh;
+        background-color: #f7f7ff;
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0px solid rgba(0, 0, 0, 0);
+        border-radius: 0.25rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%),
+          0 2px 6px 0 rgb(206 206 238 / 54%);
+      }
+      .fm-file-box {
+        font-size: 25px;
+        background: #e9ecef;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.25rem;
+      }
+      .ms-2 {
+        margin-left: 0.5rem !important;
+      }
+
+      .fm-menu .list-group a {
+        font-size: 16px;
+        color: #5f5f5f;
+        display: flex;
+        align-items: center;
+      }
+      .list-group-flush > .list-group-item {
+        border-width: 0 0 1px;
+      }
+      .list-group-item + .list-group-item {
+        border-top-width: 0;
+      }
+      .py-1 {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+      }
+      .list-group-item {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+      }
+
+      .radius-15 {
+        border-radius: 15px;
+      }
+      .fm-icon-box {
+        font-size: 32px;
+        background: #ffffff;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.25rem;
+      }
+      .font-24 {
+        font-size: 24px;
+      }
+      .ms-auto {
+        margin-left: auto !important;
+      }
+      .font-30 {
+        font-size: 30px;
+      }
+      .user-groups img {
+        margin-left: -14px;
+        border: 1px solid #e4e4e4;
+        padding: 2px;
+        cursor: pointer;
+      }
+
+      .rounded-circle {
+        border-radius: 50% !important;
+      }
+      #resultId{
+        width: 100%;
+        
+      }
+      
+      .cardFile {
+        width: 100%;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+      }
+      .cardFile h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      .cardFile p {
+        margin: 10px 0;
+        color: #666;
+      }
+      .summary {
+        /* white-space: pre-line; */
+        overflow: hidden;
+        max-height: 100px;
+        transition: max-height 0.3s ease;
+      }
+      .show-more {
+        cursor: pointer;
+        color: blue;
+      }
+      .textCard {
+        display: flex;
+      }
+      .textCardtext {
+        width: 60%;
+      }
+      .pdfLogo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 30%;
+      }
+
+      .logoimage {
+        max-width: 100%;
+        /* height: 40%; */
+      }
+      .filePath {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 30px;
+      }
+      a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+#videoContainer{
+        padding: 0;
+        margin: 0;
+        /* position: absolute; */
+        position: sticky;
+        /* display: initial; */
+        
+        top: 10%;
+        left: 10%;
+        
+        width: 80vw;
+        height: 80vh;
+        z-index: -1000;
+        /* background: red; */
+        
+        
+        
+
+      }
+      video {
+        position: sticky;
+        
+    width: 100%;
+    height: auto;
+    max-height: 100%; 
+    display: block;
+    opacity: 0.5;
+}
+    </style>
+  </head>
+  <body>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <div id="videoContainer"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-grid">
+                <a href="{{ url_for('upload_pdf') }}" class="btn btn-primary">+ Add File</a>
+              </div>
+              <h5 class="my-3">My Drive</h5>
+              <div class="fm-menu">
+                <div class="list-group list-group-flush">
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-folder me-2"></i><span>All Files</span></a
+                  >
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-devices me-2"></i
+                    ><span>My Devices</span></a
+                  >
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-analyse me-2"></i><span>Recents</span></a
+                  >
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-plug me-2"></i><span>Important</span></a
+                  >
+                  
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-file me-2"></i> <span>Documents</span></a
+                  >
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-image me-2"></i><span>Images</span></a
+                  >
+                  
+                  <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-beer me-2"></i><span>Supreme Court</span></a
+                  >
+                  <a href="javascript:;" class="list-group-item py-1"
+                  ><i class="bx bx-beer me-2"></i><span>High Courts</span></a
+                >
+                <a href="javascript:;" class="list-group-item py-1"
+                ><i class="bx bx-beer me-2"></i><span>District Court</span></a
+              >
+              <a href="javascript:;" class="list-group-item py-1"
+                    ><i class="bx bx-trash-alt me-2"></i
+                    ><span>Deleted Files</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mb-0 text-primary font-weight-bold">
+                45.5 GB <span class="float-end text-secondary">50 GB</span>
+              </h5>
+              <p class="mb-0 mt-2">
+                <span class="text-secondary">Used</span
+                >
+              </p>
+              <div class="progress mt-3" style="height: 7px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 15%"
+                  aria-valuenow="15"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 30%"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 20%"
+                  aria-valuenow="20"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="mt-3"></div>
+              <div class="d-flex align-items-center">
+                <div class="fm-file-box bg-light-primary text-primary">
+                  <i class="bx bx-image"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <h6 class="mb-0">Images</h6>
+                  <p class="mb-0 text-secondary">1,756 files</p>
+                </div>
+                <h6 class="text-primary mb-0">15.3 GB</h6>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div class="fm-file-box bg-light-success text-success">
+                  <i class="bx bxs-file-doc"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <h6 class="mb-0">Documents</h6>
+                  <p class="mb-0 text-secondary">123 files</p>
+                </div>
+                <h6 class="text-primary mb-0">256 MB</h6>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div class="fm-file-box bg-light-danger text-danger">
+                  <i class="bx bxs-file-doc"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <h6 class="mb-0">Draft Files</h6>
+                  <p class="mb-0 text-secondary">24 files</p>
+                </div>
+                <h6 class="text-primary mb-0">3.4 GB</h6>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div class="fm-file-box bg-light-warning text-warning">
+                  <i class="bx bx-image"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <h6 class="mb-0">Other Files</h6>
+                  <p class="mb-0 text-secondary">458 files</p>
+                </div>
+                <h6 class="text-primary mb-0">3 GB</h6>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div class="fm-file-box bg-light-info text-info">
+                  <i class="bx bx-image"></i>
+                </div>
+                <div class="flex-grow-1 ms-2">
+                  <h6 class="mb-0">Unknown Files</h6>
+                  <p class="mb-0 text-secondary">57 files</p>
+                </div>
+                <h6 class="text-primary mb-0">17.8 GB</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9">
+          <div class="card">
+            <div class="card-body">
+              
+              <h1 class="head-title"><a href="{{ url_for('upload_pdf') }}">Judicial Insight Navigator</a></h1>
+              <div class="fm-search">
+                <!-- -------------------------saerch -->
+                <div class="s130">
+                  <form id="queryForm" method="POST" action="/process_query">
+                    <div class="inner-form">
+                      <div class="input-field first-wrap">
+                        <div class="svg-wrapper">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          id="query"
+                          type="text"
+                          placeholder="What are you looking for?"
+                          class="email-id-placeholder"
+                          name="query"
+                          required
+                        />
+                      </div>
+                      <div class="input-field second-wrap">
+                        <!-- <button class="btn-search" type="button">SEARCH</button> -->
+                        <input id="submitQuery" class="btn-search" type="submit" value="SUBMIT" />
+                      </div>
+                    </div>
+                    <span class="info"
+                      >ex. Judgement of Supreme Court on electoral bond </span
+                    >
+                  </form>
+                </div>
+                <!-- ----------------judgement -->
+               
+              
+
+              
+
+              
+            </div>
+
+            <div class="results" id="resultId">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="/static/index.js"></script>
+     <script>
+
+
+
+        var files = {
+            {% for key in files %}
+            "{{ key }}": {{ files[key]|tojson|safe }},
+             {% endfor %}
+            };
+
+        var result = document.getElementById("resultId");
+        console.log(files)
+
+        let keysCount = Object.keys(files).length;
+        result.innerHTML += `<center><h2><u>  ${keysCount} Match found</h2></center></u>`
+        var countCases = 1;
+        for (let filesData in files){
+
+
+        console.log(filesData)
+        console.log(files[filesData])
+
+        result.innerHTML += `<div class="cardFile">
+          <div class="textCard">
+            <div class="textCardtext">
+              <h2># ${countCases}:</h2>
+              <p><strong><u>Court Name:</strong></u> ${files[filesData].court_name}</p>
+              <p><strong><u>Case ID:</strong></u> ${files[filesData].case_id}</p>
+              <p><strong><u>Case Year:</strong></u> ${files[filesData].case_year}</p>
+              <p><strong><u>Judges Names:</strong></u> ${files[filesData].judges_names.join(' ')}
+              </p>
+              <p><strong><u>Appellants:</strong></u> ${files[filesData].parties_involved.appellants.join(' ')}</p>
+              <p><strong><u>Respondents:</strong></u> ${files[filesData].parties_involved.respondents.join(' ')}
+              </p>
+              <p><strong><u>File Path:</strong></u> <a href="${files[filesData].file_path}" target="_blank" >${files[filesData].file_path.substring(7)}
+          </a>
+              </p>
+            </div>
+            <div class="pdfLogo">
+
+
+              <a href="${files[filesData].file_path}" target="_blank" >
+            <img class="logoimage" src="${files[filesData].wordCloudpng}" alt="" srcset="" />
+            
+          </a>
+          </div>
+          </div>
+          <div class="summary">
+            <strong><u>Summary:</u></strong><br />
+            ${files[filesData].summary}
+          </div>
+          <p class="show-more" onclick="toggleSummary(this)">Show More</p>
+        </div>`
+        countCases = countCases + 1
+      }
+
+
+        function toggleSummary(element) {
+            var summary = element.parentElement.querySelector(".summary");
+            if (summary.style.maxHeight) {
+              summary.style.maxHeight = null;
+              document.querySelector(".show-more").innerText = "Show More";
+            } else {
+              summary.style.maxHeight = summary.scrollHeight + "px";
+              document.querySelector(".show-more").innerText = "Show Less";
+            }
+          }
+          document.getElementById('submitQuery').addEventListener('click', function(event) {
+          console.log('first')
+    // event.preventDefault(); // Prevent form submission
+    var videoContainer = document.getElementById('videoContainer');
+    videoContainer.style.zIndex = '100';
+    videoContainer.innerHTML = '<video autoplay><source src="/static/loading.MP4" type="video/mp4"></video>';
+});
+    </script>
+      
+  </body>
+</html>

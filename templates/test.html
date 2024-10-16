@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary</title>
+  </head>
+  <body>
+    <h1>Summary</h1>
+
+    <script>
+      console.log("check");
+      var data = {{ dataFile|tojson }};
+
+      console.log(data);
+    </script>
+    <h2>Enter Query</h2>
+    <form id="queryForm" method="POST" action="/process_query">
+      <label for="query">Query:</label>
+      <input type="text" id="query" name="query" required />
+
+      <input type="submit" value="Submit Query" />
+    </form>
+  </body>
+</html>
+var files = {{ files|tojson }}; var files = {{
+files|tojson(sort_keys=False)|safe }};
